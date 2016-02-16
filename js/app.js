@@ -12,7 +12,4 @@ App.prototype.init = function() {
 
 App.prototype.initPage = function() {
 
-	if ($("#admin").length) {
-		this.page = new Admin();
-	}
 };
