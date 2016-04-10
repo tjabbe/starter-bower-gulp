@@ -10,6 +10,7 @@ var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var mainBowerFiles = require('main-bower-files');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -23,8 +24,9 @@ gulp.task('sass', function () {
          errorHandler: function (error) {
            console.log(error.message);
     }}))
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(nano())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('build'))
     .pipe(browserSync.reload({stream:true}));
 });
