@@ -1,0 +1,14 @@
+h2 {
+	@include format-h1();
+	text-align: center;
+}
+
+p {
+	@include format-paragraph();
+}
+
+.cta {
+	@include format-cta();
+	text-decoration: none;
+	color: $black;
+}

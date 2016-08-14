@@ -1,35 +1,37 @@
 {
-  "name": "starter",
+  "name": "Starter",
   "version": "1.0.0",
-  "description": "Just another site.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "Louis Amiot",
-  "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
-    "devDependencies": {
-    "browser-sync": "*",
-    "express": "*",
-    "gulp": "*",
-    "gulp-concat": "*",
-    "gulp-cssnano": "*",
-    "gulp-jshint": "*",
-    "gulp-plumber": "*",
-    "gulp-sass": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
-    "gulp-watch": "*",
-    "jshint": "*",
-    "main-bower-files": "*"
-  },
-  "dependencies": {}
+  "author": "Anonymous",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-filter": "^3.0.1",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-iconfont-css": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulp.spritesmith": "^4.3.0",
+    "imagemin-pngquant": "^4.2.0",
+    "jquery": "^2.1.4",
+    "minimist": "^1.2.0",
+    "node-bourbon": "^4.2.3",
+    "normalize.scss": "^0.1.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4"
+  }
 }

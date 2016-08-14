@@ -1,0 +1,24 @@
+{
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "curly": true,
+  "noarg": true,
+  "undef": true,
+  "unused": "vars",
+  "strict": true,
+  "browser": true,
+  "globals": {
+    "jQuery": false,
+    "$": false,
+    "Modernizr": false,
+    "FastClick": false,
+    "MarkerClusterer": false,
+    "google": false,
+    "InfoBubble": false,
+    "toastr": false,
+    "PhotoSwipe": false,
+    "PhotoSwipeUI_Default": false,
+    "noUiSlider": false
+  }
+}

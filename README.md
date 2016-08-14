@@ -1,1 +1,1 @@
-# starter-bower-gulp
+# Project name
