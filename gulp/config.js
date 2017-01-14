@@ -19,8 +19,9 @@ module.exports = {
   },
 
   scripts: {
-    src: appSrc + '/assets/scripts/**/*.js',
-    vendorSrc: [appSrc + '/assets/scripts/vendors/jquery-2.1.4.min.js', appSrc + '/assets/scripts/vendors/*.js'],
+    src: appSrc + '/assets/scripts/main.js',
+    watchSrc: appSrc + '/assets/scripts/**/*.js',
+    vendorSrc: appSrc + '/assets/scripts/vendors/*.js',
     dest: appDest + '/js/',
     modernizrOpts: {
       cache: true,
@@ -66,8 +67,8 @@ module.exports = {
   },
 
   views: {
-    watchSrc: appSrc + '/views/**/*.php',
-    src: appSrc + '/views/**/*.php',
+    watchSrc: appSrc + '/views/**/*.*',
+    src: appSrc + '/views/**/*.*',
     dest: appDest
   },
 
@@ -86,17 +87,24 @@ module.exports = {
     }
   },
 
-  iconfont: {
+  icons: {
+    watchSrc: appSrc + '/assets/icons/*.svg',
     src: appSrc + '/assets/icons/*.svg',
-    dest: appSrc + '/assets/fonts/',
-    fontSrc: appSrc + '/assets/fonts/icons.*',
-    fontDest: appDest + '/fonts/',
-    opts: {
-      fontName: 'icons',
-      path: appSrc + '/assets/styles/base/_icons-tpl.scss',
-      targetPath: '../styles/base/_icons.scss',
-      fontPath: '../fonts/'
-    }
+    spriteConfig: {
+      mode: {
+        symbol: { // symbol mode to build the SVG
+          render: {
+            css: false, // CSS output option for icon sizing
+            scss: false // SCSS output option for icon sizing
+          },
+          dest: 'sprite', // destination folder
+          prefix: '.svg--%s', // BEM-style prefix if styles rendered
+          sprite: 'sprite.svg', //generated sprite name
+          example: true // Build a sample page, please!
+        }
+      }
+    },
+    dest: appDest + '/img/',
   },
 
   images: {
@@ -128,6 +136,6 @@ module.exports = {
   },
 
   browserSync: {
-    proxy: 'boxparking.dev'
+    proxy: 'example.dev'
   }
 };

@@ -8,5 +8,5 @@ requireDir('./gulp/tasks');
 
 // Default task
 gulp.task('default', function(){
-  runSequence('iconfont', 'copy:root', 'copy:fonts', 'sprite', 'modernizr', 'server');
+  runSequence('icons', 'copy:root', 'copy:fonts', 'sprite', 'modernizr', 'server');
 });

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
     
-    <title>Canyon - This is why</title>    
+    <title>Starter</title>    
     
     <!-- SEO meta -->
     <meta name="robots" content="index, follow" />
@@ -49,23 +49,11 @@
     <!-- endbuild -->
 
 </head>
-<body> 
+<body>
 
-    <?php include 'modules/m-cover.php'; ?>
-
-    <?php include 'modules/m-gallery.php'; ?>
-
-    <?php include 'modules/m-video.php'; ?>
-
-    <?php include 'modules/m-story.php'; ?>
-
-    <?php include 'modules/m-interview.php'; ?>
-
-    <?php include 'modules/m-highlight.php'; ?>
-
-    <?php include 'modules/m-instagram.php'; ?>
-
-    <?php include 'partials/footer.php'; ?>
+    <svg class="svg--twitter-dims">
+        <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+    </svg>
 
     <script src="js/vendors.js"></script>
     <script src="js/app.js"></script>

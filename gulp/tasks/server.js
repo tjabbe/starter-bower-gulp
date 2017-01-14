@@ -16,5 +16,5 @@ gulp.task('server', ['styles', 'views', 'jshint', 'scripts:vendors', 'scripts:ap
   gulp.watch(config.scriptsCorpo.src, ['jshint', reload]);
   gulp.watch(config.scriptsCorpo.src, ['scriptsCorpo:app', reload]);
   // -- End corpo
-  gulp.watch(config.iconfont.src, ['iconfontWatch', reload]);
+  gulp.watch(config.icons.src, ['icons', reload]);
 });

@@ -6,7 +6,10 @@ var gulp          = require('gulp'),
     concat        = require('gulp-concat'), 
     notify        = require('gulp-notify'),
     config        = require('../config').scripts,
-    options       = require('minimist')(process.argv.slice(2));
+    options       = require('minimist')(process.argv.slice(2)),
+    browserify    = require('browserify'),
+    buffer        = require('vinyl-buffer'),
+    source        = require('vinyl-source-stream');
 
 gulp.task('modernizr', function(){
   return gulp.src(config.src)
@@ -39,8 +42,18 @@ gulp.task('scripts:vendors', function(){
 });
 
 gulp.task('scripts:app', function(){
-  return gulp.src(config.src)
-    .pipe(concat('app.js'))
-    .pipe(options.production ? uglify() : gutil.noop())
-    .pipe(gulp.dest(config.dest));
+    var b = browserify({
+        entries: config.src,
+        debug: true
+    });
+
+    return b.bundle()
+       .on('error', function(err) {
+         console.log(err.toString());
+         this.emit("end");
+       })
+       .pipe(source('main.js'))
+       .pipe(buffer())
+       .pipe(options.production ? uglify() : gutil.noop())
+       .pipe( gulp.dest(config.dest) );
 });
