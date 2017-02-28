@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-    
-    <title>Starter</title>    
-    
+
+    <title>Starter</title>
+
     <!-- SEO meta -->
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Canyon - This is why" />
+    <meta name="description" content="" />
     <!-- End SEO meta -->
 
     <!-- IE meta -->
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="msapplication-tap-highlight" content="no" />
     <!-- End IE meta -->
-   
+
     <!-- Apple meta -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Canyon - This is why" />
+    <meta name="apple-mobile-web-app-title" content="" />
     <!-- End Apple meta -->
 
     <!-- Mobile meta -->
@@ -43,7 +43,7 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:image" content="" />
     <!-- End Twitter meta -->
-    
+
     <!-- build:css -->
     <link rel="stylesheet" href="css/app.css">
     <!-- endbuild -->
@@ -51,12 +51,10 @@
 </head>
 <body>
 
-    <svg class="svg--twitter-dims">
-        <use xlink:href="img/sprite/sprite.svg#twitter"></use>
-    </svg>
+    <h1>Hi.</h1>
 
     <script src="js/vendors.js"></script>
     <script src="js/app.js"></script>
 
 </body>
-</html> 
+</html>

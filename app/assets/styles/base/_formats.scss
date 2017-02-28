@@ -1,39 +1,39 @@
 @mixin format-strong() {
-    font-family: $canyonBold;
+    font-family: Helvetica;
 }
 
 @mixin format-h1() {
-    font-family: $canyonBold;
+    font-family: Helvetica;
     text-transform: uppercase;
-    font-size: em(60px);
+    font-size: rem(60px);
     line-height: 1.3;
 }
 
 @mixin format-h2() {
-    font-family: $canyonBold;
+    font-family: Helvetica;
     text-transform: uppercase;
-    font-size: em(40px);
+    font-size: rem(40px);
     line-height: 1;
 }
 
 @mixin format-quote() {
-    font-family: $canyonBold;
+    font-family: Helvetica;
     text-transform: uppercase;
-    font-size: em(40px);
+    font-size: rem(40px);
     line-height: 1;
-    letter-spacing: em(2.22px);
+    letter-spacing: rem(2.22px);
 }
 
 @mixin format-paragraph() {
-    font-family: $canyonReg;
-    font-size: em(20px);
+    font-family: Helvetica;
+    font-size: rem(20px);
     line-height: 1;
 }
 
 @mixin format-cta() {
-    font-family: $canyonBold;
+    font-family: Helvetica;
     text-transform: uppercase;
-    font-size: em(22px);
+    font-size: rem(22px);
     line-height: 1;
-    letter-spacing: em(1.3px);
+    letter-spacing: rem(1.3px);
 }
